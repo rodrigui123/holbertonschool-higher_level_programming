@@ -7,7 +7,7 @@ if __name__ == "__main__":
         print("1 argument:")
     elif len(sys.argv) > 2:
         print(f"{len(sys.argv) - 1} arguments:")
-    x =
+    x = 1
     for arg in sys.argv[1:]:
         print(f"{x}: {arg}")
         x += 1
