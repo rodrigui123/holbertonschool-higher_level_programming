@@ -2,9 +2,6 @@
 """Creating an empty class that defines a square"""
 
 
-from ctypes import sizeof
-
-
 class Square:
     """this is the empty class"""
     def __init__(self, size=0):
