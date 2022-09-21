@@ -4,7 +4,7 @@
 
 class Square:
     """this is the empty class"""
-    def __init__(self, size=0,position=(0, 0)):
+    def __init__(self, size=0, position=(0, 0)):
         """adding a private attribute """
         self.size = size
         self.position = position
@@ -36,7 +36,7 @@ class Square:
 
     def my_print(self):
         if self.__size == 0:
-                    print()
+            print()
         for i in range(self.__position[1]):
                 print()
         for i in range(self.__size):
