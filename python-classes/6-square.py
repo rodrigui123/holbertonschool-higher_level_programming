@@ -44,10 +44,10 @@ class Square:
         for i in range(self.__size):
             for i in range(self.__position[0]):
                 print(" ", end="")
-        for i in range(self.__size):
-            if i == self.__size - 1:
-                print(end="")
-        print("#" * self.__size)
+            for i in range(self.__size):
+                if i == self.__size - 1:
+                    print(end="")
+            print("#" * self.__size)
 
     def area(self):
         return (self.__size * self.__size)
