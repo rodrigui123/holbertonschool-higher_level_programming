@@ -26,7 +26,7 @@ class Square:
             for i in range(self.__size):
                 if i == self.__size -1:
                     print(end="")
-                print("#" * self.__size)
+            print("#" * self.__size)
         print()
 
     def area(self):
