@@ -16,11 +16,12 @@ def matrix_divided(matrix, div):
     for row in matrix:
         if counter != 0 and len(row) != rowSize:
             raise TypeError("Each row of the matrix must have the same size")
+        counter += 1
         rowSize = len(row)
         sublist = []
         for elements in row:
             if type(elements) is not int and type(elements) is not float:
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-        sublist.append(round(elements / 2))
+        sublist.append(round(elements / 2, 2))
         list.append(sublist)
     return list
