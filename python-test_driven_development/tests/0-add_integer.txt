@@ -1,1 +1,21 @@
-The
+The ''0-add_integer'' module
+======================
+
+Using ''add_integer''
+-------------------
+
+
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(3, 6)
+9
+
+>>> add_integer(3, -5)
+-2
+
+>>> add_integer(3)
+101
+
+>>> add_integer(3.14, -8)
+-5
