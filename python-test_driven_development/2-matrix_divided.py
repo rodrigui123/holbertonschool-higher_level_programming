@@ -9,7 +9,7 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    if type(matrix) is not list and type(matrix) is not int or type(matrix) is not float:
+    if type(matrix) is not list:
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     counter = 0
     list = []
@@ -19,6 +19,8 @@ def matrix_divided(matrix, div):
         rowSize = len(row)
         sublist = []
         for elements in row:
+            if type(elements) is not int and type(elements) is not float:
+                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
             sublist.append(elements / 2)
         list.append(sublist)
     return list
