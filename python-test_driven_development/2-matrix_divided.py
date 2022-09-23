@@ -20,7 +20,7 @@ def matrix_divided(matrix, div):
         for elements in row:
             if type(elements) is not int and type(elements) is not float:
                 raise TypeError("matrix must be a matrix (list of lists)"
-                                "of integers/floats")
+                                " of integers/floats")
             sublist.append(round(elements / div, 2))
         list.append(sublist)
     return list
