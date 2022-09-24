@@ -13,6 +13,6 @@ def print_square(size):
         raise TypeError("size must be an integer")
     for i in range(size):
         for i in range(size):
-            if i == size -1:
+            if i == size - 1:
                 print(end="")
         print("#" * size)
