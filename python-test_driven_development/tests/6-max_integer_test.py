@@ -19,7 +19,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(max_integer[4, -5, 8, 9], 9)
 
     def test_all_negatives(self):
-        self.assertEqual(max_integer[-3, -5, -6], -6)
+        self.assertEqual(max_integer[-3, -5, -6], -3)
 
     def test_one_elem(self):
         self.assertEqual(max_integer[9], 9)
