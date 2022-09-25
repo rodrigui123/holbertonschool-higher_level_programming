@@ -70,7 +70,7 @@ class Rectangle:
             if i > 0:
                 string += '\n'
             for i in range(self.__width):
-                string += (self).symbol_print
+                string += str(self.symbol_print)
         return string
 
     def __repr__(self):
