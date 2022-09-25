@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""python interpreter"""
+"""Write an empty class"""
 
 
 class Rectangle:
