@@ -6,7 +6,7 @@ class Rectangle:
     """empty class"""
 
     number_of_instances = 0
-    symbol_print = "#"
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """On instantiation"""
@@ -70,7 +70,7 @@ class Rectangle:
             if i > 0:
                 string += '\n'
             for i in range(self.__width):
-                string += str(self.symbol_print)
+                string += str(self.print_symbol)
         return string
 
     def __repr__(self):
@@ -81,4 +81,3 @@ class Rectangle:
     def __del__(self):
         print("Bye rectangle...")
         type(self).number_of_instances -= 1
-
