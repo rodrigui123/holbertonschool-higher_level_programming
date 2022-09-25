@@ -6,6 +6,7 @@ class Rectangle:
     """empty class"""
 
     num_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """On instantiation"""
         if type(width) != int:
@@ -16,6 +17,7 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if height < 0:
             raise ValueError("height must be >= 0")
+
         self.width = width
         self.height = height
         type(self).num_of_instances += 1
