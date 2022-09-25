@@ -61,10 +61,10 @@ class Rectangle:
             return ""
 
         string = ""
-        for i in range(self.__width):
+        for i in range(self.__height):
             if i > 0:
                 string += '\n'
-            for i in range(self.__height):
+            for i in range(self.__width):
                 string += '#'
         return string
 
