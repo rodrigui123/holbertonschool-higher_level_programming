@@ -4,6 +4,7 @@
 
 class Mylist(list):
     """Write a class that inherits from list"""
+
     def print_sorted(self):
         my_list = self.copy()
         my_list.sort()
