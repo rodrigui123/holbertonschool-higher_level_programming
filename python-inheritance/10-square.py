@@ -4,6 +4,7 @@
 
 Rectangle = __import__('9-rectangle').Rectangle
 
+
 class Square(Rectangle):
     """Write a class Rectangle that inherits
      from Rectangle (9-rectangle.py)"""
@@ -11,7 +12,6 @@ class Square(Rectangle):
         """constructor"""
         self.integer_validator("size", size)
         self.__size = size
-
 
     def area(self):
         return (self.__size ** 2)
