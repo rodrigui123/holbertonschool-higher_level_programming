@@ -7,10 +7,7 @@ Using ''BaseGeometry''
 
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-bg = BaseGeometry()
->>> type(bg)
-<class '7-base_geometry.BaseGeometry'>
-
+>>> bg = BaseGeometry()
 >>> bg.area()
 Traceback (most recent call last):
 Exception: area() is not implemented
@@ -43,7 +40,7 @@ TypeError: age must be an integer
 
 >>> bg.integer_validator("age", [2])
 Traceback (most recent call last):
-integer
+TypeError: age must be an integer
 
 >>> bg.integer_validator("age", True)
 Traceback (most recent call last):
