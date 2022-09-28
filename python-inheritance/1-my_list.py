@@ -2,9 +2,9 @@
 """Write a class that inherits from list"""
 
 
-class Mylist(list):
-    """class MyList that inherits from list"""
+class MyList(list):
+    """"class: MyList (inherits from list)"""
     def print_sorted(self):
-        my_list = self.copy()
-        my_list.sort()
-        print(my_list)
+        new_list = self.copy()
+        new_list.sort()
+        print(new_list)
