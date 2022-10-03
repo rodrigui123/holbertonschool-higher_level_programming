@@ -107,8 +107,8 @@ class Rectangle(Base):
         """update the Rectangle class"""
         if len(args) != 0:
             for i in len(args):
-                if i == args[1]:
-                    self.id == i
+                if i == len(args[1]):
+                    i == self.id
                 if i == args[2]:
                     i == self.width
                 if i == args[3]:
