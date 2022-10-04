@@ -31,7 +31,7 @@ class Square(Rectangle):
         """adding values to atttributes"""
         length = len(args)
         if length > 0 or length is None:
-            self.__id = args[0]
+            self.id = args[0]
             if length > 1:
                 self.size = args[1]
             if length > 2:
