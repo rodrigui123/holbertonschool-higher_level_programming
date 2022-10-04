@@ -109,11 +109,11 @@ class Rectangle(Base):
         if length != 0:
             if length > 1:
                 self.__id = args[1]
-                if length > 2:
-                    self.__width = args[2]
-                if length > 3:
-                    self.__height = args[3]
-                if length > 4:
-                    self.__x = args[4]
-                if length > 5:
-                    self.__y = args[5]
+            if length > 2:
+                self.__width = args[2]
+            if length > 3:
+                self.__height = args[3]
+            if length > 4:
+                self.__x = args[4]
+            if length > 5:
+                self.__y = args[5]
