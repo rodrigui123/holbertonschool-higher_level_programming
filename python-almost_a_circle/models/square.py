@@ -51,7 +51,7 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """Rectangle instance to dictionary representation"""
-        newdict = []
+        newdict = {}
         newdict['id'] = self.id
         newdict['width'] = self.width
         newdict['height'] = self.height
