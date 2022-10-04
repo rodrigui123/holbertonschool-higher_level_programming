@@ -106,7 +106,7 @@ class Rectangle(Base):
     def update(self, *args):
         """update the Rectangle class"""
         length = len(args)
-        if length != 0:
+        if length > 0:
             if length > 1:
                 self.__id = args[1]
             if length > 2:
