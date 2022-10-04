@@ -57,4 +57,4 @@ class Square(Rectangle):
         newdict['height'] = self.height
         newdict['x'] = self.x
         newdict['y'] = self.y
-        return newdict
+        return {newdict}
