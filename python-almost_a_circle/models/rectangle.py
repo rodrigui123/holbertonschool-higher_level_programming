@@ -103,7 +103,7 @@ class Rectangle(Base):
                 print(" ", end="")
             print("#" * self.__width)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """update the Rectangle class"""
         length = len(args)
         if length > 0:
@@ -116,3 +116,15 @@ class Rectangle(Base):
                 self.__x = args[3]
             if length > 4:
                 self.__y = args[4]
+        else:
+            for key in kwargs:
+                if key == 'id':
+                    self.id = kwargs.get(key)
+                if key == 'width':
+                    self.width = kwargs.get(key)
+                if key == 'height':
+                    self.height = kwargs.get(key)
+                if key == 'x':
+                    self.x = kwargs.get(key)
+                if key == 'y':
+                    self.y = kwargs.get(key)
