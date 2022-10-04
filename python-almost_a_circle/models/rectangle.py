@@ -107,13 +107,12 @@ class Rectangle(Base):
         """update the Rectangle class"""
         length = len(args)
         if length > 0:
+            self.__id = args[0]
             if length > 1:
-                self.__id = args[1]
+                self.__width = args[1]
             if length > 2:
-                self.__width = args[2]
+                self.__height = args[2]
             if length > 3:
-                self.__height = args[3]
+                self.__x = args[3]
             if length > 4:
-                self.__x = args[4]
-            if length > 5:
-                self.__y = args[5]
+                self.__y = args[4]
