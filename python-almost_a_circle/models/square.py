@@ -49,12 +49,3 @@ class Square(Rectangle):
                 if key == 'y':
                     self.y = kwargs.get(key)
 
-    def to_dictionary(self):
-        """Rectangle instance to dictionary representation"""
-        newdict = {}
-        newdict['id'] = self.id
-        newdict['width'] = self.width
-        newdict['height'] = self.height
-        newdict['x'] = self.x
-        newdict['y'] = self.y
-        return {newdict}
