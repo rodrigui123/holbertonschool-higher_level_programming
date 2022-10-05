@@ -25,7 +25,7 @@ class Base(list):
             return "[]"
         return json.dumps(list_dictionaries)
 
-    @staticmethod
+    @classmethod
     def save_to_file(cls, list_objs):
         """JSON string to file"""
         newlist = []
