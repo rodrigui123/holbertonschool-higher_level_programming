@@ -18,6 +18,7 @@ class Base(list):
             type(self).__nb_objects += 1
             self.id = type(self).__nb_objects
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """Dictionary to JSON string"""
         if list_dictionaries is None or list_dictionaries is []:
