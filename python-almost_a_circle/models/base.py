@@ -2,6 +2,9 @@
 """python interpreter"""
 
 
+import json
+
+
 class Base(list):
     """class: Base"""
 
@@ -14,3 +17,9 @@ class Base(list):
         else:
             type(self).__nb_objects += 1
             self.id = type(self).__nb_objects
+
+    def to_json_string(list_dictionaries):
+        """Dictionary to JSON string"""
+        if list_dictionaries is None or list_dictionaries is []:
+            return "[]"
+        return json.loads(list_dictionaries)
