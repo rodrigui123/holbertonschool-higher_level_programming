@@ -2,6 +2,7 @@
 """python interpreter"""
 
 
+from operator import length_hint
 from models.base import Base
 """import class: base"""
 
@@ -106,8 +107,9 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """update the Rectangle class"""
         length = len(args)
+        print(length)
         if length > 0:
-            self.__id = args[0]
+            self.id = args[0]
             if length > 1:
                 self.__width = args[1]
             if length > 2:
