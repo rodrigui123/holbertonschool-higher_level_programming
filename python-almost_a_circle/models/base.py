@@ -61,7 +61,7 @@ class Base(list):
             return []
         with open(filename, 'r') as file:
             filecont = file.read()
-        instances = cls.from_json_string(filename)
+        instances = cls.from_json_string(filecont)
         nwlist = []
         for dic in instances:
             nwlist.append(cls.create(**dict))
