@@ -3,6 +3,7 @@
 
 
 import json
+import os.path
 
 
 class Base(list):
@@ -56,7 +57,7 @@ class Base(list):
     def load_from_file(cls):
         """returns a list of instances:"""
         filename = cls.__name__ + ".json"
-        if filename is None:
+        if not os.path.exists(filename):
             return []
         with open(filename, 'r') as f:
             filecont = f.read()
