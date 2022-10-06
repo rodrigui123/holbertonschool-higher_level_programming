@@ -59,8 +59,8 @@ class Base(list):
         filename = cls.__name__ + ".json"
         if not os.path.exists(filename):
             return []
-        with open(filename, 'r') as f:
-            filecont = f.read()
+        with open(filename, 'r') as file:
+            filecont = file.read()
         instances = cls.from_json_string(filename)
         nwlist = []
         for dic in instances:
