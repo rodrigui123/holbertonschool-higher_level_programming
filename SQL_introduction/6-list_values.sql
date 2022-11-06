@@ -1,2 +1,2 @@
 -- lists all rows of the table
-COUNT(*)
+SELECT * FROM first_table;
