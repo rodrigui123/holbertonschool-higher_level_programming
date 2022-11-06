@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../python-hello_world"
+		},
+		{
+			"path": "../python-if_else_loops_functions"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "python-hello_world"
+	}
+}
