@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""task0"""
+"""task 0"""
+
 
 import MySQLdb
 import sys
