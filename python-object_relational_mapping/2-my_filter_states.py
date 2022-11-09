@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""task 1"""
+"""task 2"""
 
 
 import MySQLdb
@@ -17,8 +17,3 @@ if __name__ == '__main__':
     mycursor = db.cursor()
     mycursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id;")
     result = mycursor.fetchall()
-    for record in result:
-        if record [1] [0] == 'N':
-            print(record)
-    mycursor.close()
-    db.close()
