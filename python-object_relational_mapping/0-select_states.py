@@ -19,4 +19,5 @@ if __name__ == '__main__':
     result = mycursor.fetchall()
     for record in result:
         print(record)
+    mycursor.close()
     db.close()
