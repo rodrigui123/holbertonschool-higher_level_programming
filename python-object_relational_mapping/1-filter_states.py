@@ -15,7 +15,7 @@ if __name__ == '__main__':
         db=sys.argv[3]
     )
     mycursor = db.cursor()
-    mycursor.execute("SELECT * FROM states WHERE user LIKE 'N%' ORDER BY id;")
+    mycursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id;")
     result = mycursor.fetchall()
     for record in result:
         if record [1][0] == 'N':
