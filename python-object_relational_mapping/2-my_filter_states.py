@@ -19,6 +19,7 @@ if __name__ == '__main__':
                      ORDER BY id;".format(sys.argv[4]))
     result = mycursor.fetchall()
     for record in result:
-        print(record)
+        if record[1] == sys.argv[4]:
+            print(record)
     mycursor.close()
     db.close()
