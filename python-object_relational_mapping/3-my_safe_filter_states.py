@@ -15,7 +15,8 @@ if __name__ == '__main__':
         db=sys.argv[3]
     )
     mycursor = db.cursor()
-    mycursor.execute("SELECT * FROM states WHERE name LIKE %s", (sys.argv[4], ))
+    mycursor.execute("SELECT * FROM states WHERE name \
+                    LIKE %s", (sys.argv[4], ))
     result = mycursor.fetchall()
     for record in result:
         if record[1] == sys.argv[4]:
