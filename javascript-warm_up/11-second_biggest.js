@@ -6,7 +6,7 @@ let numbers = process.argv.slice(2);
 // If no arguments were passed, print 0
 if (numbers.length === 0) {
   console.log(0);
-  return;
+    return;
 }
 
 // If only one argument was passed, print 0
